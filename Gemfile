@@ -23,6 +23,19 @@ end
 
 gem 'jquery-rails', '<3.0.0'
 
+
+group :test do
+  gem 'cucumber-rails', :require => false
+  gem 'capybara'
+  # database_cleaner is not required, but highly recommended
+end
+
+gem 'rspec-rails', :group => [:development, :test]
+gem "factory_girl_rails", :group => [:development, :test]
+gem "database_cleaner", :group => :test
+
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
