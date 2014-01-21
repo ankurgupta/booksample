@@ -4,7 +4,7 @@ gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-gem 'mysql2'
+gem 'sqlite3'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 
@@ -20,7 +20,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+
+gem 'jquery-rails', '<3.0.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
