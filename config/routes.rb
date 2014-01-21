@@ -1,4 +1,7 @@
 RailsInterview::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   get "books_by_popularity/index"
   root :to => 'books_by_popularity#index'
 
